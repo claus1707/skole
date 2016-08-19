@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title> Kalkulator ekesmpel </title>
+	<style>
+		body {
+			background-color: linen;
+			
+		}
+		table {
+			background-color: #E0E0E0;
+			float: left;
+			border: 2px;
+			margin-left: 20px:
+		}	
+		.operatorer {
+			background-color:gray;
+			margin-left: 30px;
+			}		
+			
+		
+		
+		tr {
+			line-height: 25px;
+		}
+		
+	.button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 10px 15px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+			margin: 2px;
+			cursor: pointer;
+			width: 50px;
+		}
+		
+	#bakgrund {
+			background-color: #A0A0A0;
+			width:340px;
+			height:300px;
+			padding:20px;
+			
+		
+	}
+	
+	#disp {
+			width:300px;
+			padding:10px;
+			margin-bottom:10px;
+            font-size:20px;
+			
+	
+	}
+
+	</style>
+</head>
+
+<body>
+  
+  <p>Dette er et eksempel på en kalkukator. </p>
+  <p>Det er bare lagt inn funkjonalitet på 7, + og = knappen.</p>
+
+<div id="bakgrund">
+  <div style = "margin-left:210px"> Min kalkulator </div>
+
+	<div id="disp">
+		 <input type="text" id="tall">
+	</div>
+	<div id="tall">
+		<table>
+			<tr>
+			<td><button class="button"  onclick="document.getElementById('tall').value += 7">7</button></td>
+			<td><button class="button">8 </button></td>
+			<td><button class="button">9 </button></td>
+			</tr>
+			
+			<tr>
+			<td><button class="button">4 </button></td>
+			<td><button class="button">5 </button></td>
+			<td><button class="button">6 </button></td>
+			</tr>
+			
+			<tr>
+			<td><button class="button">1 </button></td>
+			<td><button class="button">2 </button></td>
+			<td><button class="button">3 </button></td>
+			</tr>
+			<tr>
+				<td><button class="button">0 </button></td>
+			</tr>
+		</table>
+	</div> 
+
+	<div id="opp">
+
+	<table class="operatorer">
+		<tr>
+			
+			<td><button class="button">AC </button></td>
+			<td><button class="button">C </button></td>
+		</tr>
+		<tr>
+			<td><button class="button" onclick="document.getElementById('tall').value += '+'">+ </button></td>
+			<td><button class="button">- </button></td>
+		</tr>
+		<tr>
+			<td><button class="button">* </button></td>
+			<td><button class="button">: </button></td>
+		</tr>
+		<tr>
